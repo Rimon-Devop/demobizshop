@@ -195,7 +195,7 @@ html[data-lang="bn"] .plan__price { font-family: var(--font); font-weight: 700; 
 .demos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .demo { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; transition: transform .2s, box-shadow .2s; }
 .demo:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-.demo__thumb { height: 170px; display: grid; place-items: center; font-size: 2.6rem; letter-spacing: .15em; }
+.demo__thumb { aspect-ratio: 16 / 10; display: grid; place-items: center; font-size: 2.6rem; }
 .t-organic { background: linear-gradient(135deg, #fbe3b0, #e0a85a); }
 .t-beauty { background: linear-gradient(135deg, #ffd9e6, #f59ab9); }
 .t-fashion { background: linear-gradient(135deg, #e6dcff, #a98ee8); }
@@ -301,3 +301,13 @@ html[data-lang="bn"] .plan__price { font-family: var(--font); font-weight: 700; 
   .compare__row > div { padding: 12px 10px; }
   .hero__cta .btn { flex: 1; }
 }
+
+/* live demo cards */
+.demo { display: flex; flex-direction: column; }
+.demo__thumb { overflow: hidden; background: var(--tint); }
+.demo__thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 1.2s ease; }
+.demo:hover .demo__thumb img { transform: scale(1.04); }
+.demo__body { flex: 1; }
+.demo__tag--live { background: var(--green-100); color: var(--green-700); }
+.demo__open { display: inline-block; margin-top: 10px; font-weight: 700; color: var(--green-700); }
+.t-custom { background: repeating-linear-gradient(45deg, var(--tint), var(--tint) 12px, #fff 12px, #fff 24px); border-bottom: 1px dashed var(--line); }

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>অলংকার — জুয়েলারি ডেমো</title>
+<meta name="description" content="জুয়েলারি ই-কমার্স ডেমো — আংটি, নেকলেস, কানের দুল, চুড়ি।" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/shop.css" />
+<style>:root { --main: #1f3a5f; --main-dark: #13253d; --accent: #c9a227; --soft: #f4f1e6; --bg: #fbfaf6; }
+.brand__icon { background: linear-gradient(135deg, #c9a227, #8a6d10); } .pcard__img { background: linear-gradient(160deg, #fff, #f1ece0); }</style>
+</head>
+<body>
+<script src="../assets/art.js"></script>
+<script>
+window.SHOP = {
+  key: "jewelry", name: "অলংকার", tagline: "প্রতিদিনের সাজে আভিজাত্য", icon: "💍",
+  hotline: "09610000000", address: "বায়তুল মোকাররম, ঢাকা", deliveryIn: 70, deliveryOut: 130,
+  announce: "✨ গোল্ড প্লেটেড জুয়েলারিতে ৬ মাসের কালার গ্যারান্টি · গিফট বক্স ফ্রি",
+  about: "গোল্ড প্লেটেড, অক্সিডাইজড ও স্টোন জুয়েলারি — উৎসব থেকে প্রতিদিনের সাজের জন্য।",
+  defaultDesc: "উন্নত মানের ব্রাস বেসে ১৮ ক্যারেট গোল্ড প্লেটিং। পানি ও পারফিউম থেকে দূরে রাখুন। প্রতিটি অর্ডারে ফ্রি গিফট বক্স।",
+  trust: [["🎁", "ফ্রি গিফট বক্স"], ["🛡️", "৬ মাস কালার গ্যারান্টি"], ["💵", "ক্যাশ অন ডেলিভারি"], ["🚚", "সারাদেশে ডেলিভারি"]],
+  categories: [
+    { id: "ring", name: "আংটি", type: "ring", c1: "#d4a72c", c2: "#e03131" },
+    { id: "necklace", name: "নেকলেস", type: "necklace", c1: "#d4a72c", c2: "#2f9e44" },
+    { id: "earring", name: "কানের দুল", type: "earring", c1: "#d4a72c", c2: "#1971c2" },
+    { id: "bangle", name: "চুড়ি ও বালা", type: "bangle", c1: "#d4a72c", c2: "#fff" },
+  ],
+  slides: [
+    { pid: "n1", kicker: "ব্রাইডাল কালেকশন", title: "কুন্দন স্টোন নেকলেস সেট", sub: "বিয়ে ও উৎসবের জন্য রাজকীয় সাজ — কানের দুল সহ", cta: "এখনই দেখুন", bg: "linear-gradient(120deg,#13253d,#2f5a8f)" },
+    { pid: "b1", kicker: "নতুন ডিজাইন", title: "গোল্ড প্লেটেড বালা সেট", sub: "প্রতিদিনের সাজে আভিজাত্যের ছোঁয়া", cta: "অর্ডার করুন", bg: "linear-gradient(120deg,#5c4310,#c9a227)" },
+  ],
+  products: [
+    { id: "n1", cat: "necklace", best: 1, name: "কুন্দন স্টোন নেকলেস সেট", en: "kundan necklace", type: "necklace", c1: "#d4a72c", c2: "#e03131", price: 2450, old: 2950, unit: "কানের দুল সহ", tag: "ব্রাইডাল" },
+    { id: "n2", cat: "necklace", best: 1, name: "মিনিমাল চেইন পেনডেন্ট", en: "pendant", type: "necklace", c1: "#c0c0c0", c2: "#1971c2", price: 690, old: 850 },
+    { id: "n3", cat: "necklace", name: "অক্সিডাইজড চোকার", en: "choker", type: "necklace", c1: "#6c757d", c2: "#2f9e44", price: 890 },
+    { id: "r1", cat: "ring", best: 1, name: "রুবি স্টোন গোল্ড প্লেটেড আংটি", en: "ring", type: "ring", c1: "#d4a72c", c2: "#e03131", price: 450, old: 590, variants: [["সাইজ ৬", 450], ["সাইজ ৭", 450], ["সাইজ ৮", 450]] },
+    { id: "r2", cat: "ring", name: "ডায়মন্ড কাট সিলভার আংটি", en: "silver ring", type: "ring", c1: "#ced4da", c2: "#74c0fc", price: 550, variants: [["সাইজ ৬", 550], ["সাইজ ৭", 550], ["সাইজ ৮", 550]] },
+    { id: "r3", cat: "ring", name: "এমারেল্ড কাপল রিং সেট", en: "couple ring", type: "ring", c1: "#d4a72c", c2: "#2f9e44", price: 990, old: 1200, unit: "২ পিস" },
+    { id: "e1", cat: "earring", best: 1, name: "ঝুমকা কানের দুল", en: "jhumka", type: "earring", c1: "#d4a72c", c2: "#e03131", price: 520, old: 650, tag: "বেস্ট সেলার" },
+    { id: "e2", cat: "earring", name: "স্টোন ড্রপ ইয়াররিং", en: "earring", type: "earring", c1: "#ced4da", c2: "#1971c2", price: 480 },
+    { id: "e3", cat: "earring", name: "অক্সিডাইজড চাঁদবালি", en: "chandbali", type: "earring", c1: "#6c757d", c2: "#2f9e44", price: 390, old: 450 },
+    { id: "b1", cat: "bangle", best: 1, name: "গোল্ড প্লেটেড বালা (জোড়া)", en: "bangle", type: "bangle", c1: "#d4a72c", c2: "#fff", price: 1250, old: 1500, variants: [["২.৪", 1250], ["২.৬", 1250], ["২.৮", 1290]] },
+    { id: "b2", cat: "bangle", name: "স্টোন চুড়ি সেট (৬ পিস)", en: "churi", type: "bangle", c1: "#c2255c", c2: "#ffd43b", price: 650, variants: [["২.৪", 650], ["২.৬", 650]] },
+  ],
+  sections: [
+    { title: "💎 সবচেয়ে জনপ্রিয়" },
+    { title: "📿 নেকলেস", cat: "necklace" },
+    { title: "💍 আংটি", cat: "ring" },
+  ],
+  promo: { pid: "e1", kicker: "গিফট আইডিয়া", title: "প্রিয়জনের জন্য উপহার", sub: "যেকোনো জুয়েলারির সাথে ফ্রি গিফট বক্স ও হাতে লেখা কার্ড" },
+  reviews: [
+    ["তাসনিম হক", "নেকলেস সেটটা বিয়েতে পরেছিলাম, সবাই প্রশংসা করেছে। প্লেটিং খুব ভালো।", "বনানী"],
+    ["রিয়া দাস", "গিফট বক্সটা এত সুন্দর ছিল! বোনকে উপহার দিয়েছি।", "নারায়ণগঞ্জ"],
+    ["ফাহিমা খাতুন", "৩ মাস পরেও রং একদম আগের মতো আছে।", "বগুড়া"],
+  ],
+};
+</script>
+<script src="../assets/shop.js"></script>
+</body>
+</html>

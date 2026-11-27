@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>গ্লো কথা — বিউটি ও কসমেটিক্স ডেমো</title>
+<meta name="description" content="বিউটি ও কসমেটিক্স ই-কমার্স ডেমো — স্কিনকেয়ার, মেকআপ, হেয়ারকেয়ার।" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/shop.css" />
+<style>:root { --main: #d6336c; --main-dark: #a61e4d; --accent: #7c3aed; --soft: #fff0f6; --bg: #fdf7fa; }</style>
+</head>
+<body>
+<script src="../assets/art.js"></script>
+<script>
+window.SHOP = {
+  key: "beauty", name: "গ্লো কথা", tagline: "আপনার ত্বকের যত্নের গল্প", icon: "🌸",
+  hotline: "09610000000", address: "বসুন্ধরা সিটি, ঢাকা", deliveryIn: 70, deliveryOut: 130,
+  announce: "💖 যেকোনো ২টি পণ্যে ১০% ছাড় · ১০০% অথেনটিক প্রোডাক্ট গ্যারান্টি",
+  about: "কোরিয়ান, জাপানিজ ও লোকাল ব্র্যান্ডের অথেনটিক স্কিনকেয়ার ও মেকআপ — সরাসরি আপনার দরজায়।",
+  defaultDesc: "১০০% অথেনটিক প্রোডাক্ট, ব্যাচ নম্বর ও এক্সপায়ারি ডেট সহ। ব্যবহারের আগে প্যাচ টেস্ট করে নিন।",
+  trust: [["✅", "১০০% অথেনটিক"], ["💵", "ক্যাশ অন ডেলিভারি"], ["🚚", "২৪-৪৮ ঘণ্টায় ডেলিভারি"], ["💬", "ফ্রি স্কিন কনসালটেশন"]],
+  categories: [
+    { id: "serum", name: "সিরাম", type: "dropper", c1: "#f7c6d9", c2: "#a61e4d" },
+    { id: "cleanser", name: "ফেসওয়াশ", type: "tube", c1: "#c9f0e4", c2: "#1f7a5c" },
+    { id: "cream", name: "ক্রিম ও লোশন", type: "jar", c1: "#fde2e4", c2: "#b23a48" },
+    { id: "makeup", name: "মেকআপ", type: "lipstick", c1: "#c2185b", c2: "#2d2d2d" },
+    { id: "hair", name: "হেয়ারকেয়ার", type: "bottle", c1: "#d8c8f5", c2: "#5b3aa8" },
+  ],
+  slides: [
+    { pid: "s1", kicker: "নিউ অ্যারাইভাল", title: "ভিটামিন সি গ্লো সিরাম", sub: "দাগহীন উজ্জ্বল ত্বক মাত্র ৪ সপ্তাহে — লঞ্চ অফারে ২৫% ছাড়", cta: "এখনই কিনুন", bg: "linear-gradient(120deg,#a61e4d,#f06595)", label: "Vit C" },
+    { pid: "k1", kicker: "শীতের যত্ন", title: "ডিপ ময়েশ্চারাইজিং ক্রিম", sub: "শুষ্ক ত্বকে ২৪ ঘণ্টা আর্দ্রতা", cta: "অর্ডার করুন", bg: "linear-gradient(120deg,#5b3aa8,#9775fa)", label: "Cream" },
+  ],
+  products: [
+    { id: "s1", cat: "serum", best: 1, name: "ভিটামিন সি ব্রাইটেনিং সিরাম", en: "vitamin c serum", type: "dropper", c1: "#ffd8a8", c2: "#d9480f", label: "Vit C", price: 890, old: 1190, unit: "৩০ মিলি", tag: "নতুন", bg: "#fff4e6" },
+    { id: "s2", cat: "serum", best: 1, name: "নিয়াসিনামাইড ১০% সিরাম", en: "niacinamide serum", type: "dropper", c1: "#e5dbff", c2: "#5f3dc4", label: "Niacin", price: 750, old: 950, unit: "৩০ মিলি" },
+    { id: "s3", cat: "serum", name: "হায়ালুরোনিক অ্যাসিড সিরাম", en: "hyaluronic serum", type: "dropper", c1: "#d0ebff", c2: "#1864ab", label: "HA", price: 820, unit: "৩০ মিলি" },
+    { id: "c1", cat: "cleanser", best: 1, name: "সেন্টেলা কাম ফোম ক্লেনজার", en: "centella cleanser", type: "tube", c1: "#c3fae8", c2: "#087f5b", label: "Cica", price: 650, old: 780, unit: "১৫০ মিলি" },
+    { id: "c2", cat: "cleanser", name: "রাইস ওয়াটার ফেসওয়াশ", en: "rice facewash", type: "tube", c1: "#f8f9fa", c2: "#868e96", label: "Rice", price: 480, unit: "১০০ মিলি" },
+    { id: "c3", cat: "cleanser", name: "টি-ট্রি অ্যাকনে ফেসওয়াশ", en: "tea tree facewash", type: "tube", c1: "#d3f9d8", c2: "#2b8a3e", label: "Tea Tree", price: 420, old: 520, unit: "১০০ মিলি" },
+    { id: "k1", cat: "cream", best: 1, name: "সিরামাইড ময়েশ্চারাইজিং ক্রিম", en: "moisturizer cream", type: "jar", c1: "#fde2e4", c2: "#b23a48", label: "Cream", price: 990, old: 1250, unit: "৫০ গ্রাম", tag: "বেস্ট সেলার" },
+    { id: "k2", cat: "cream", name: "সানস্ক্রিন SPF 50+ PA++++", en: "sunscreen", type: "tube", c1: "#fff3bf", c2: "#e67700", label: "SPF50", price: 780, unit: "৫০ মিলি" },
+    { id: "k3", cat: "cream", name: "অ্যালোভেরা স্লিপিং মাস্ক", en: "aloe mask", type: "jar", c1: "#d8f5a2", c2: "#5c940d", label: "Aloe", price: 690, unit: "১০০ গ্রাম" },
+    { id: "l1", cat: "makeup", best: 1, name: "ম্যাট লিপস্টিক — রুবি রেড", en: "lipstick red", type: "lipstick", c1: "#c92a2a", c2: "#2d2d2d", label: "Ruby", price: 450, old: 550, variants: [["রুবি রেড", 450], ["নুড পিংক", 450], ["ব্রিক ব্রাউন", 450]] },
+    { id: "l2", cat: "makeup", name: "ম্যাট লিপস্টিক — রোজ পিংক", en: "lipstick pink", type: "lipstick", c1: "#e64980", c2: "#2d2d2d", label: "Rose", price: 450 },
+    { id: "l3", cat: "makeup", name: "লিকুইড ফাউন্ডেশন", en: "foundation", type: "bottle", c1: "#e8c4a0", c2: "#7a4e2d", label: "Base", price: 1150, old: 1350, variants: [["ফেয়ার", 1150], ["মিডিয়াম", 1150], ["ট্যান", 1150]] },
+    { id: "r1", cat: "hair", best: 1, name: "অনিয়ন হেয়ার অয়েল", en: "onion hair oil", type: "bottle", c1: "#d8c8f5", c2: "#5b3aa8", label: "Onion", price: 550, old: 650, unit: "২০০ মিলি" },
+    { id: "r2", cat: "hair", name: "আরগান অয়েল শ্যাম্পু", en: "argan shampoo", type: "bottle", c1: "#ffe8cc", c2: "#d9480f", label: "Argan", price: 720, unit: "৩০০ মিলি" },
+  ],
+  sections: [
+    { title: "✨ বেস্ট সেলিং" },
+    { title: "💧 সিরাম", cat: "serum" },
+    { title: "🧴 ফেসওয়াশ", cat: "cleanser" },
+    { title: "💄 মেকআপ", cat: "makeup" },
+  ],
+  promo: { pid: "k2", kicker: "স্কিন কেয়ার কম্বো", title: "ক্লেনজার + সিরাম + সানস্ক্রিন একসাথে", sub: "কম্বো কিনলে ৩০০ টাকা সাশ্রয় + ফ্রি ডেলিভারি" },
+  reviews: [
+    ["নুসরাত জাহান", "ভিটামিন সি সিরামটা ২ সপ্তাহ ব্যবহার করেই পার্থক্য বুঝছি। অথেনটিক প্রোডাক্ট।", "উত্তরা"],
+    ["তানজিলা রহমান", "প্যাকেজিং খুব যত্ন করে করা ছিল, এক্সপায়ারি ডেটও অনেক লম্বা।", "রাজশাহী"],
+    ["সাদিয়া আফরিন", "স্কিন টাইপ জিজ্ঞেস করে সাজেস্ট করেছে, খুব হেল্পফুল সার্ভিস।", "খুলনা"],
+  ],
+};
+</script>
+<script src="../assets/shop.js"></script>
+</body>
+</html>

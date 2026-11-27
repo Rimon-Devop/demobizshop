@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>রংধনু ফ্যাশন — ক্লোদিং ডেমো</title>
+<meta name="description" content="ফ্যাশন ই-কমার্স ডেমো — শাড়ি, থ্রি-পিস, কুর্তি, পাঞ্জাবি।" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/shop.css" />
+<style>:root { --main: #1c1c1c; --main-dark: #000; --accent: #c8963e; --soft: #f5f1ea; --bg: #faf8f5; }
+.cats a.on, .btn--main { background: var(--main); } .brand__icon { background: var(--accent); }</style>
+</head>
+<body>
+<script src="../assets/art.js"></script>
+<script>
+window.SHOP = {
+  key: "fashion", name: "রংধনু", tagline: "ঐতিহ্যে আধুনিকতা", icon: "👗",
+  hotline: "09610000000", address: "নিউ মার্কেট, ঢাকা", deliveryIn: 70, deliveryOut: 130,
+  announce: "🛍️ ঈদ কালেকশন ২০২৬ চলে এসেছে · সাইজ না মিললে ফ্রি এক্সচেঞ্জ",
+  about: "তাঁতের শাড়ি থেকে আধুনিক কুর্তি — দেশীয় কারিগরদের হাতে তৈরি পোশাক সাশ্রয়ী দামে।",
+  defaultDesc: "আরামদায়ক কাপড়, পাকা রং এবং যত্নের সাথে সেলাই করা। ছবির সাথে রঙের সামান্য পার্থক্য হতে পারে। সাইজ না মিললে ৩ দিনের মধ্যে ফ্রি এক্সচেঞ্জ।",
+  trust: [["🔄", "ফ্রি সাইজ এক্সচেঞ্জ"], ["💵", "ক্যাশ অন ডেলিভারি"], ["👀", "দেখে নিয়ে পেমেন্ট"], ["🚚", "সারাদেশে ডেলিভারি"]],
+  categories: [
+    { id: "saree", name: "শাড়ি", type: "saree", c1: "#c2255c", c2: "#f2c14e" },
+    { id: "threepiece", name: "থ্রি-পিস", type: "kurti", c1: "#1971c2", c2: "#fff" },
+    { id: "kurti", name: "কুর্তি", type: "kurti", c1: "#2f9e44", c2: "#ffe066" },
+    { id: "panjabi", name: "পাঞ্জাবি", type: "panjabi", c1: "#f1e3c6", c2: "#8a6d3b" },
+  ],
+  slides: [
+    { pid: "sa1", kicker: "ঈদ কালেকশন", title: "টাঙ্গাইলের হাফসিল্ক জামদানি", sub: "উৎসবের দিনে ঐতিহ্যের সাজ — এখন ১৫% ছাড়ে", cta: "কালেকশন দেখুন", bg: "linear-gradient(120deg,#5c0f2e,#c2255c)" },
+    { pid: "p1", kicker: "পুরুষদের জন্য", title: "প্রিমিয়াম কটন পাঞ্জাবি", sub: "আরামদায়ক কাপড়, নিখুঁত ফিটিং", cta: "অর্ডার করুন", bg: "linear-gradient(120deg,#1c1c1c,#5c4a2e)" },
+  ],
+  products: [
+    { id: "sa1", cat: "saree", best: 1, name: "হাফসিল্ক জামদানি শাড়ি", en: "jamdani saree", type: "saree", c1: "#c2255c", c2: "#f2c14e", price: 3450, old: 4100, unit: "ব্লাউজ পিস সহ", tag: "ঈদ স্পেশাল" },
+    { id: "sa2", cat: "saree", best: 1, name: "টাঙ্গাইল তাঁতের শাড়ি", en: "tant saree", type: "saree", c1: "#2b8a3e", c2: "#ffd43b", price: 1650, old: 1900, unit: "ব্লাউজ পিস সহ" },
+    { id: "sa3", cat: "saree", name: "কাতান বেনারসি শাড়ি", en: "katan saree", type: "saree", c1: "#862e9c", c2: "#fab005", price: 5800, unit: "ব্লাউজ পিস সহ" },
+    { id: "sa4", cat: "saree", name: "সুতি প্রিন্ট শাড়ি", en: "cotton saree", type: "saree", c1: "#1971c2", c2: "#fff", price: 890, old: 1050, unit: "ব্লাউজ পিস সহ" },
+    { id: "t1", cat: "threepiece", best: 1, name: "লন কটন থ্রি-পিস", en: "lawn three piece", type: "kurti", c1: "#1971c2", c2: "#fff", price: 1850, old: 2200, variants: [["আনস্টিচ", 1850], ["রেডিমেড (M)", 2150], ["রেডিমেড (L)", 2150], ["রেডিমেড (XL)", 2250]] },
+    { id: "t2", cat: "threepiece", name: "জর্জেট এমব্রয়ডারি থ্রি-পিস", en: "georgette three piece", type: "kurti", c1: "#e64980", c2: "#ffe066", price: 2650, variants: [["আনস্টিচ", 2650], ["রেডিমেড", 2950]] },
+    { id: "k1", cat: "kurti", best: 1, name: "ব্লক প্রিন্ট কটন কুর্তি", en: "kurti", type: "kurti", c1: "#2f9e44", c2: "#ffe066", price: 950, old: 1150, variants: [["M", 950], ["L", 950], ["XL", 990]] },
+    { id: "k2", cat: "kurti", name: "লিনেন লং কুর্তি", en: "linen kurti", type: "kurti", c1: "#f08c00", c2: "#fff4e6", price: 1250, variants: [["M", 1250], ["L", 1250], ["XL", 1290]] },
+    { id: "p1", cat: "panjabi", best: 1, name: "প্রিমিয়াম কটন পাঞ্জাবি", en: "panjabi", type: "panjabi", c1: "#f1e3c6", c2: "#8a6d3b", price: 1450, old: 1750, variants: [["38", 1450], ["40", 1450], ["42", 1450], ["44", 1490]], tag: "বেস্ট সেলার" },
+    { id: "p2", cat: "panjabi", name: "এমব্রয়ডারি সিল্ক পাঞ্জাবি", en: "silk panjabi", type: "panjabi", c1: "#364fc7", c2: "#ffd43b", price: 2350, variants: [["40", 2350], ["42", 2350], ["44", 2390]] },
+    { id: "p3", cat: "panjabi", name: "খাদি কটন পাঞ্জাবি", en: "khadi panjabi", type: "panjabi", c1: "#495057", c2: "#dee2e6", price: 1150, old: 1300, variants: [["40", 1150], ["42", 1150], ["44", 1190]] },
+  ],
+  sections: [
+    { title: "⭐ ট্রেন্ডিং এখন" },
+    { title: "🥻 শাড়ি", cat: "saree" },
+    { title: "👔 পাঞ্জাবি", cat: "panjabi" },
+  ],
+  promo: { pid: "t1", kicker: "কম্বো অফার", title: "২টি থ্রি-পিস কিনলে ৪০০ টাকা ছাড়", sub: "সাথে ঢাকার ভিতরে ফ্রি ডেলিভারি" },
+  reviews: [
+    ["মারিয়া সুলতানা", "শাড়ির রং আর কাপড় ছবির মতোই এসেছে। খুবই সন্তুষ্ট।", "মোহাম্মদপুর"],
+    ["আরিফুল ইসলাম", "পাঞ্জাবির ফিটিং একদম পারফেক্ট, কাপড়ও আরামদায়ক।", "কুমিল্লা"],
+    ["শারমিন আক্তার", "সাইজ বদলাতে চেয়েছিলাম, ঝামেলা ছাড়াই এক্সচেঞ্জ করে দিয়েছে।", "গাজীপুর"],
+  ],
+};
+</script>
+<script src="../assets/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>সুন্দরবনের খাঁটি চাকের মধু — ল্যান্ডিং পেজ ডেমো</title>
+<meta name="description" content="সিঙ্গেল প্রোডাক্ট সেলস ল্যান্ডিং পেজ ডেমো — ফেসবুক অ্যাডের জন্য।" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root { --main: #e07b16; --dark: #5a2d06; --green: #1f8a3c; --soft: #fff5e8; --ink: #2a1a0c; --muted: #7a6656; --line: #f0e2cf; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Hind Siliguri", system-ui, sans-serif; color: var(--ink); background: #fffdf9; line-height: 1.6; font-size: 17px; overflow-x: hidden; }
+a { color: inherit; }
+h1, h2, h3 { line-height: 1.3; margin: 0 0 .5em; }
+svg { display: block; width: 100%; height: 100%; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+.demo-bar { background: #111; color: #fff; text-align: center; font-size: .85rem; padding: 6px 12px; }
+.demo-bar a { color: #ffb347; font-weight: 700; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--green); color: #fff; font: inherit; font-weight: 700; font-size: 1.15rem; border: 0; border-radius: 12px; padding: 14px 28px; cursor: pointer; text-decoration: none; box-shadow: 0 8px 0 #146128; transition: transform .1s, box-shadow .1s; animation: pulse 2s infinite; }
+.btn:active { transform: translateY(4px); box-shadow: 0 4px 0 #146128; }
+@keyframes pulse { 50% { transform: scale(1.03); } }
+@media (prefers-reduced-motion: reduce) { .btn { animation: none; } }
+.center { text-align: center; }
+
+.hero { background: radial-gradient(circle at 50% 0, #ffe2b8, #fffdf9 70%); padding: 34px 0 26px; text-align: center; }
+.hero .tag { display: inline-block; background: #e53935; color: #fff; font-weight: 700; padding: 3px 14px; border-radius: 99px; font-size: .9rem; }
+.hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); color: var(--dark); margin: 14px 0 6px; }
+.hero h1 em { font-style: normal; color: var(--main); }
+.hero p { color: var(--muted); font-size: 1.1rem; margin: 0 auto 10px; max-width: 34em; }
+.hero__img { width: 260px; height: 260px; margin: 6px auto; filter: drop-shadow(0 20px 30px rgba(120, 60, 0, .3)); }
+.price { display: inline-flex; align-items: center; gap: 12px; background: #fff; border: 2px dashed var(--main); border-radius: 14px; padding: 8px 20px; margin: 6px 0 18px; }
+.price del { color: var(--muted); font-size: 1.1rem; } .price b { font-size: 2rem; color: #e53935; }
+.timer { display: flex; justify-content: center; gap: 8px; margin: 16px 0 4px; }
+.timer div { background: var(--dark); color: #fff; border-radius: 10px; padding: 6px 10px; min-width: 62px; }
+.timer b { display: block; font-size: 1.5rem; line-height: 1.1; } .timer small { font-size: .75rem; opacity: .8; }
+
+section { padding: 40px 0; }
+.alt { background: var(--soft); }
+.title { text-align: center; font-size: clamp(1.4rem, 3.6vw, 2rem); color: var(--dark); }
+.title::after { content: ""; display: block; width: 70px; height: 4px; background: var(--main); border-radius: 4px; margin: 10px auto 0; }
+.problems { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.problems div { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; gap: 10px; }
+.benefits { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.benefits li { background: #fff; border-radius: 12px; padding: 14px 16px; border-left: 5px solid var(--green); box-shadow: 0 4px 14px -8px rgba(0, 0, 0, .15); }
+.why { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: center; margin-top: 20px; }
+.why ul { padding-left: 0; list-style: none; margin: 0; } .why li { padding: 6px 0; } .why li::before { content: "✅ "; }
+.reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
+.reviews div { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px; font-size: .95rem; }
+.reviews b { color: #f5a623; letter-spacing: 2px; } .reviews small { color: var(--muted); display: block; margin-top: 6px; }
+details { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 0 16px; margin-top: 10px; }
+summary { cursor: pointer; font-weight: 600; padding: 14px 0; }
+details p { margin: 0 0 14px; color: var(--muted); }
+
+.order { background: linear-gradient(180deg, var(--soft), #fff); }
+.order__box { background: #fff; border: 3px solid var(--main); border-radius: 20px; padding: 24px; margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.order h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.pack { display: flex; align-items: center; gap: 10px; border: 2px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; }
+.pack:has(input:checked) { border-color: var(--green); background: #effaf1; }
+.pack input { accent-color: var(--green); width: 18px; height: 18px; }
+.pack span { flex: 1; } .pack b { color: var(--dark); } .pack small { display: block; color: var(--green); font-weight: 600; }
+label.f { display: block; font-weight: 600; margin-bottom: 10px; font-size: .95rem; }
+label.f input, label.f textarea { display: block; width: 100%; margin-top: 4px; font: inherit; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: 10px; outline: none; background: #fff; color: var(--ink); }
+label.f input:focus, label.f textarea:focus { border-color: var(--main); }
+.ship { display: flex; gap: 8px; margin-bottom: 12px; } .ship .pack { flex: 1; margin: 0; font-size: .92rem; }
+.sum { background: var(--soft); border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; }
+.sum div { display: flex; justify-content: space-between; padding: 3px 0; }
+.sum .t { border-top: 2px dashed var(--line); margin-top: 6px; padding-top: 8px; font-size: 1.15rem; font-weight: 700; color: var(--dark); }
+.order .btn { width: 100%; animation: none; }
+.note { text-align: center; color: var(--muted); font-size: .85rem; margin: 10px 0 0; }
+.done { text-align: center; padding: 30px 10px; grid-column: 1 / -1; }
+.done i { width: 70px; height: 70px; border-radius: 50%; background: var(--green); color: #fff; font-size: 2.2rem; font-style: normal; display: grid; place-items: center; margin: 0 auto 12px; }
+.done .demo { background: #fff8e6; border: 1px dashed var(--main); border-radius: 12px; padding: 12px; margin: 16px auto; max-width: 480px; font-size: .95rem; }
+.sticky { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 10px 16px; box-shadow: 0 -4px 14px rgba(0, 0, 0, .1); display: none; z-index: 20; }
+.sticky .btn { width: 100%; animation: none; box-shadow: none; padding: 12px; }
+footer { background: var(--dark); color: #e8d6c2; text-align: center; padding: 22px 16px 80px; font-size: .9rem; }
+footer a { color: #ffb347; }
+
+@media (max-width: 700px) {
+  .problems, .benefits, .reviews, .order__box, .why { grid-template-columns: 1fr; }
+  .why > div:first-child { width: 180px; margin: 0 auto; height: 180px; }
+  .hero__img { width: 210px; height: 210px; }
+  .order__box { padding: 16px; }
+  .sticky { display: block; }
+}
+</style>
+</head>
+<body>
+<div class="demo-bar">🎯 এটি একটি <b>ল্যান্ডিং পেজ ডেমো</b> — ফেসবুক অ্যাডের জন্য এমন পেজ চাই? <a href="../../#contact">অর্ডার করুন →</a></div>
+
+<header class="hero"><div class="wrap">
+  <span class="tag">🔥 শীতকালীন বিশেষ অফার</span>
+  <h1>সুন্দরবনের <em>খাঁটি চাকের মধু</em><br>এখন সরাসরি আপনার ঘরে</h1>
+  <p>কোনো চিনি নেই, কোনো ভেজাল নেই — মৌয়ালদের হাতে সংগ্রহ করা ১০০% প্রাকৃতিক মধু</p>
+  <div class="hero__img" id="heroImg"></div>
+  <div class="price"><del>৳১,০৫০</del><b>৳৮৫০</b><span>(৫০০ গ্রাম)</span></div>
+  <div><a href="#order" class="btn">🛒 এখনই অর্ডার করুন</a></div>
+  <div class="timer" id="timer"><div><b id="th">০০</b><small>ঘণ্টা</small></div><div><b id="tm">০০</b><small>মিনিট</small></div><div><b id="ts">০০</b><small>সেকেন্ড</small></div></div>
+  <p style="font-size:.9rem;margin-top:4px">⏳ অফার শেষ হতে বাকি</p>
+</div></header>
+
+<section><div class="wrap">
+  <h2 class="title">আপনিও কি এই সমস্যায় ভুগছেন?</h2>
+  <div class="problems">
+    <div>😟 বাজারের মধুতে চিনি মেশানো কিনা বুঝতে পারেন না?</div>
+    <div>🤧 শীতে ঘন ঘন সর্দি-কাশিতে ভুগছেন?</div>
+    <div>😩 সারাদিন ক্লান্তি আর দুর্বলতা লাগে?</div>
+    <div>💸 বেশি দাম দিয়েও খাঁটি জিনিস পাচ্ছেন না?</div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2 class="title">খাঁটি মধুর উপকারিতা</h2>
+  <ul class="benefits">
+    <li>🛡️ রোগ প্রতিরোধ ক্ষমতা বাড়াতে সাহায্য করে</li>
+    <li>🤧 সর্দি-কাশি ও গলা ব্যথায় প্রাকৃতিক আরাম</li>
+    <li>⚡ প্রাকৃতিক শক্তির উৎস — ক্লান্তি দূর করে</li>
+    <li>🌙 ভালো ঘুম ও হজমে সহায়ক</li>
+    <li>✨ ত্বক উজ্জ্বল রাখতে সাহায্য করে</li>
+    <li>👶 পরিবারের সবার জন্য নিরাপদ (১ বছরের উপরে)</li>
+  </ul>
+  <p class="center" style="margin-top:24px"><a href="#order" class="btn">🛒 অর্ডার করতে ক্লিক করুন</a></p>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="title">কেন আমাদের মধু আলাদা?</h2>
+  <div class="why">
+    <div id="whyImg" style="height:220px"></div>
+    <ul>
+      <li>সরাসরি সুন্দরবনের মৌয়ালদের কাছ থেকে সংগ্রহ</li>
+      <li>কোনো হিট বা প্রসেসিং করা হয় না — কাঁচা মধু</li>
+      <li>ল্যাব টেস্ট রিপোর্ট সহ</li>
+      <li>ফুড গ্রেড জারে নিরাপদ প্যাকেজিং</li>
+      <li>পণ্য হাতে পেয়ে, খেয়ে দেখে টাকা পরিশোধ</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2 class="title">কাস্টমারদের মতামত</h2>
+  <div class="reviews">
+    <div><b>★★★★★</b><p>“দ্বিতীয়বার অর্ডার করলাম। ঘ্রাণ আর স্বাদেই বোঝা যায় খাঁটি।”</p><small>— শাহানা বেগম, ঢাকা (ডেমো)</small></div>
+    <div><b>★★★★★</b><p>“বাচ্চার কাশির জন্য নিয়েছিলাম, খুব উপকার পেয়েছি।”</p><small>— রাশেদ আহমেদ, ময়মনসিংহ (ডেমো)</small></div>
+    <div><b>★★★★★</b><p>“ডেলিভারি ম্যানের সামনেই খুলে দেখে টাকা দিয়েছি। ভালো সার্ভিস।”</p><small>— নাজমা আক্তার, সিলেট (ডেমো)</small></div>
+  </div>
+</div></section>
+
+<section class="order" id="order"><div class="wrap">
+  <h2 class="title">অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h2>
+  <p class="center" style="color:var(--muted)">কোনো অগ্রিম টাকা লাগবে না — পণ্য হাতে পেয়ে পেমেন্ট করুন</p>
+  <form class="order__box" id="form">
+    <div>
+      <h3>১. প্যাকেজ বেছে নিন</h3>
+      <label class="pack"><input type="radio" name="pk" value="850" data-n="৫০০ গ্রাম" checked><span><b>৫০০ গ্রাম</b></span><b>৳৮৫০</b></label>
+      <label class="pack"><input type="radio" name="pk" value="1600" data-n="১ কেজি"><span><b>১ কেজি</b><small>৳১০০ সাশ্রয়</small></span><b>৳১,৬০০</b></label>
+      <label class="pack"><input type="radio" name="pk" value="3000" data-n="২ কেজি"><span><b>২ কেজি</b><small>৳৪০০ সাশ্রয় + ফ্রি ডেলিভারি</small></span><b>৳৩,০০০</b></label>
+      <h3 style="margin-top:18px">২. ডেলিভারি এলাকা</h3>
+      <div class="ship">
+        <label class="pack"><input type="radio" name="sh" value="60" checked><span>ঢাকার ভিতরে</span><b>৳৬০</b></label>
+        <label class="pack"><input type="radio" name="sh" value="120"><span>ঢাকার বাইরে</span><b>৳১২০</b></label>
+      </div>
+    </div>
+    <div>
+      <h3>৩. আপনার তথ্য দিন</h3>
+      <label class="f">আপনার নাম *<input required placeholder="সম্পূর্ণ নাম"></label>
+      <label class="f">মোবাইল নাম্বার *<input required inputmode="numeric" pattern="01[3-9][0-9]{8}" placeholder="01XXXXXXXXX"></label>
+      <label class="f">সম্পূর্ণ ঠিকানা *<textarea required rows="2" placeholder="বাসা, রোড, থানা, জেলা"></textarea></label>
+      <div class="sum">
+        <div><span>পণ্যের দাম</span><b id="sp"></b></div>
+        <div><span>ডেলিভারি চার্জ</span><b id="ss"></b></div>
+        <div class="t"><span>সর্বমোট</span><span id="st"></span></div>
+      </div>
+      <button class="btn">✅ অর্ডার কনফার্ম করুন</button>
+      <p class="note">🔒 ডেমো — কোনো আসল অর্ডার হবে না</p>
+    </div>
+  </form>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="title">সাধারণ জিজ্ঞাসা</h2>
+  <details><summary>মধু খাঁটি না হলে কী হবে?</summary><p>ডেলিভারি ম্যানের সামনে খুলে দেখুন। সন্তুষ্ট না হলে শুধু ডেলিভারি চার্জ দিয়ে ফেরত দিতে পারবেন।</p></details>
+  <details><summary>কত দিনে ডেলিভারি পাব?</summary><p>ঢাকার ভিতরে ২৪-৪৮ ঘণ্টা, ঢাকার বাইরে ২-৩ দিন।</p></details>
+  <details><summary>শীতে মধু জমে যায় কেন?</summary><p>খাঁটি মধু ঠান্ডায় জমে যাওয়া স্বাভাবিক। গরম পানিতে জার রাখলে আবার তরল হয়ে যাবে।</p></details>
+</div></section>
+
+<footer>© খাঁটি ঘর · হেল্পলাইন: ০৯৬১০০০০০০০<br>ল্যান্ডিং পেজ ডেমো by <a href="../../">ShopShuru</a></footer>
+<div class="sticky"><a href="#order" class="btn">🛒 এখনই অর্ডার করুন — ৳৮৫০</a></div>
+
+<script src="../assets/art.js"></script>
+<script>
+(function () {
+  const bn = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
+  const tk = (n) => "৳" + bn(Number(n).toLocaleString("en-IN"));
+  document.getElementById("heroImg").innerHTML = art("jar", "#f4a61d", "#8a4b08", "মধু");
+  document.getElementById("whyImg").innerHTML = art("jar", "#6b3a12", "#2e1606", "চাকের মধু");
+  // countdown to midnight
+  const pad = (n) => bn(String(n).padStart(2, "0"));
+  function tick() { const now = new Date(), end = new Date(now); end.setHours(24, 0, 0, 0); let s = Math.floor((end - now) / 1000);
+    th.textContent = pad(Math.floor(s / 3600)); tm.textContent = pad(Math.floor(s % 3600 / 60)); ts.textContent = pad(s % 60); }
+  tick(); setInterval(tick, 1000);
+  // totals
+  const f = document.getElementById("form");
+  function upd() { const p = +f.querySelector("[name=pk]:checked").value; let s = +f.querySelector("[name=sh]:checked").value; if (p >= 3000) s = 0;
+    sp.textContent = tk(p); ss.textContent = s ? tk(s) : "ফ্রি"; st.textContent = tk(p + s); }
+  f.addEventListener("change", upd); upd();
+  f.addEventListener("submit", (e) => { e.preventDefault();
+    f.innerHTML = `<div class="done"><i>✓</i><h2>ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে</h2><p>আমাদের প্রতিনিধি শীঘ্রই কল করে কনফার্ম করবেন।</p>
+      <div class="demo"><b>এটি ডেমো ছিল।</b> আসল পেজে এই মুহূর্তে কাস্টমার SMS পেত, আপনি নোটিফিকেশন পেতেন, আর ফেসবুক পিক্সেলে "Purchase" ইভেন্ট যেত।</div>
+      <a class="btn" href="../../#contact" style="width:auto">এমন ল্যান্ডিং পেজ চাই →</a></div>`;
+    f.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+})();
+</script>
+</body>
+</html>

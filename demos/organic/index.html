@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>খাঁটি ঘর — অর্গানিক ফুড ডেমো</title>
+<meta name="description" content="অর্গানিক ফুড ই-কমার্স ডেমো — গুড়, মধু, ঘি, মসলা।" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/shop.css" />
+<style>:root { --main: #e07b16; --main-dark: #a4520a; --accent: #1f8a3c; --soft: #fff3e3; --bg: #fbf8f3; }</style>
+</head>
+<body>
+<script src="../assets/art.js"></script>
+<script>
+window.SHOP = {
+  key: "organic", name: "খাঁটি ঘর", tagline: "খাঁটি খাবার, নিশ্চিন্ত জীবন", icon: "🌾",
+  hotline: "09610000000", address: "মিরপুর-১০, ঢাকা", deliveryIn: 60, deliveryOut: 120,
+  announce: "🎉 ১৫০০ টাকার উপরে অর্ডারে ঢাকায় ফ্রি ডেলিভারি!",
+  about: "সরাসরি কৃষকের কাছ থেকে সংগ্রহ করা খাঁটি ও ভেজালমুক্ত খাবার আপনার দোরগোড়ায়।",
+  defaultDesc: "সরাসরি উৎস থেকে সংগ্রহ করা, ল্যাব টেস্টেড ও কোনো কেমিক্যাল বা প্রিজারভেটিভ ছাড়া। খোলার পর ঠান্ডা ও শুকনো স্থানে রাখুন।",
+  categories: [
+    { id: "honey", name: "মধু", type: "jar", c1: "#f4a61d", c2: "#8a4b08" },
+    { id: "ghee", name: "ঘি", type: "jar", c1: "#f6d777", c2: "#8a6508" },
+    { id: "gur", name: "গুড়", type: "block", c1: "#a0561c", c2: "#6e3510" },
+    { id: "masala", name: "মসলা", type: "pouch", c1: "#d93a1f", c2: "#7a1a0c" },
+    { id: "oil", name: "সরিষার তেল", type: "bottle", c1: "#e8b41a", c2: "#8a6508" },
+    { id: "dates", name: "খেজুর ও বাদাম", type: "box", c1: "#7a4a2a", c2: "#3e2414" },
+  ],
+  slides: [
+    { pid: "h1", kicker: "শীতের স্পেশাল", title: "সুন্দরবনের খাঁটি চাকের মধু", sub: "প্রাকৃতিক, কাঁচা ও ল্যাব টেস্টেড — আজই অর্ডার করুন ২০% ছাড়ে", cta: "অর্ডার করুন", bg: "linear-gradient(120deg,#8a4b08,#e07b16)", label: "মধু" },
+    { pid: "g1", kicker: "নতুন মৌসুম", title: "খেজুরের খাঁটি পাটালি গুড়", sub: "যশোরের গাছির হাতে তৈরি, কোনো চিনি বা কেমিক্যাল মেশানো নয়", cta: "এখনই কিনুন", bg: "linear-gradient(120deg,#4a2410,#a0561c)", label: "পাটালি" },
+    { pid: "e1", kicker: "বেস্ট সেলার", title: "গাওয়া ঘি — ঘরে তৈরির স্বাদ", sub: "দেশি গরুর দুধের ননী থেকে তৈরি খাঁটি গাওয়া ঘি", cta: "অর্ডার করুন", bg: "linear-gradient(120deg,#1f6b34,#3ea55b)", label: "ঘি" },
+  ],
+  products: [
+    { id: "h1", cat: "honey", best: 1, name: "সুন্দরবনের খলিশা ফুলের মধু", en: "honey", type: "jar", c1: "#f4a61d", c2: "#8a4b08", label: "মধু", price: 850, old: 1050, variants: [["৫০০ গ্রাম", 850], ["১ কেজি", 1600]], tag: "হট" },
+    { id: "h2", cat: "honey", name: "সরিষা ফুলের মধু", en: "mustard honey", type: "jar", c1: "#f2c94c", c2: "#8a6508", label: "মধু", price: 550, old: 650, variants: [["৫০০ গ্রাম", 550], ["১ কেজি", 1000]] },
+    { id: "h3", cat: "honey", name: "লিচু ফুলের মধু", en: "litchi honey", type: "jar", c1: "#e9962b", c2: "#7a3d08", label: "মধু", price: 650, variants: [["৫০০ গ্রাম", 650], ["১ কেজি", 1200]] },
+    { id: "h4", cat: "honey", name: "কালোজিরা ফুলের মধু", en: "black seed honey", type: "jar", c1: "#6b3a12", c2: "#2e1606", label: "মধু", price: 950, old: 1100, variants: [["৫০০ গ্রাম", 950], ["১ কেজি", 1800]] },
+    { id: "e1", cat: "ghee", best: 1, name: "খাঁটি গাওয়া ঘি", en: "ghee", type: "jar", c1: "#f6d777", c2: "#8a6508", label: "ঘি", price: 1250, old: 1400, variants: [["৫০০ গ্রাম", 1250], ["১ কেজি", 2400]], tag: "বেস্ট সেলার" },
+    { id: "e2", cat: "ghee", name: "সিরাজগঞ্জের দেশি ঘি", en: "ghee", type: "jar", c1: "#f2c84b", c2: "#6e5006", label: "ঘি", price: 1150, variants: [["৫০০ গ্রাম", 1150], ["১ কেজি", 2200]] },
+    { id: "g1", cat: "gur", best: 1, name: "খেজুরের পাটালি গুড়", en: "gur jaggery", type: "block", c1: "#a0561c", c2: "#6e3510", label: "পাটালি", price: 450, old: 520, unit: "১ কেজি", tag: "সিজনাল" },
+    { id: "g2", cat: "gur", name: "খেজুরের ঝোলা গুড় (লিকুইড)", en: "liquid gur", type: "jar", c1: "#7a3a10", c2: "#3e1a06", label: "ঝোলা গুড়", price: 380, unit: "১ কেজি" },
+    { id: "g3", cat: "gur", name: "আখের লাল গুড়", en: "sugarcane gur", type: "block", c1: "#8c4a22", c2: "#5a2a10", label: "", price: 220, old: 260, unit: "১ কেজি" },
+    { id: "m1", cat: "masala", best: 1, name: "ঝাল মরিচ গুঁড়া", en: "chili powder", type: "pouch", c1: "#d93a1f", c2: "#7a1a0c", label: "মরিচ", price: 180, old: 220, unit: "২৫০ গ্রাম" },
+    { id: "m2", cat: "masala", name: "হলুদ গুঁড়া", en: "turmeric", type: "pouch", c1: "#f2b705", c2: "#7a5a02", label: "হলুদ", price: 140, unit: "২৫০ গ্রাম" },
+    { id: "m3", cat: "masala", name: "ধনিয়া গুঁড়া", en: "coriander", type: "pouch", c1: "#9aa84a", c2: "#4a5218", label: "ধনিয়া", price: 120, unit: "২৫০ গ্রাম" },
+    { id: "m4", cat: "masala", name: "গরম মসলা মিক্স", en: "garam masala", type: "pouch", c1: "#7a3e1d", c2: "#3a1a08", label: "গরম মসলা", price: 260, old: 300, unit: "১০০ গ্রাম" },
+    { id: "o1", cat: "oil", best: 1, name: "কাঠের ঘানি সরিষার তেল", en: "mustard oil", type: "bottle", c1: "#e8b41a", c2: "#8a6508", label: "সরিষা", price: 420, old: 480, variants: [["১ লিটার", 420], ["২ লিটার", 820], ["৫ লিটার", 1950]] },
+    { id: "o2", cat: "oil", name: "খাঁটি নারিকেল তেল", en: "coconut oil", type: "bottle", c1: "#f2ecd9", c2: "#6e5a2a", label: "নারিকেল", price: 360, unit: "৫০০ মিলি" },
+    { id: "d1", cat: "dates", best: 1, name: "আজওয়া খেজুর (প্রিমিয়াম)", en: "ajwa dates", type: "box", c1: "#3e2414", c2: "#1e1008", label: "আজওয়া", price: 1350, old: 1500, variants: [["৫০০ গ্রাম", 1350], ["১ কেজি", 2600]] },
+    { id: "d2", cat: "dates", name: "মরিয়ম খেজুর", en: "mariam dates", type: "box", c1: "#7a4a2a", c2: "#3e2414", label: "মরিয়ম", price: 850, unit: "৫০০ গ্রাম" },
+    { id: "d3", cat: "dates", name: "কাজুবাদাম (W320)", en: "cashew", type: "pouch", c1: "#e8d3a8", c2: "#7a5a2a", label: "কাজু", price: 690, unit: "২৫০ গ্রাম" },
+  ],
+  sections: [
+    { title: "🔥 বেস্ট সেলিং পণ্য" },
+    { title: "🍯 মধু", cat: "honey" },
+    { title: "🟤 গুড়", cat: "gur" },
+    { title: "🌶️ মসলা", cat: "masala" },
+  ],
+  promo: { pid: "o1", kicker: "সীমিত সময়ের অফার", title: "কাঠের ঘানিতে ভাঙা খাঁটি সরিষার তেল", sub: "৫ লিটার কিনলে সাথে ৫০০ গ্রাম হলুদ গুঁড়া ফ্রি!" },
+  reviews: [
+    ["রুমানা আক্তার", "মধুটা একদম খাঁটি, বাচ্চারা খুব পছন্দ করেছে। প্যাকেজিংও সুন্দর ছিল।", "ধানমন্ডি"],
+    ["মোঃ সাকিব হাসান", "অর্ডারের পরদিনই ডেলিভারি পেয়েছি। পাটালি গুড়ের স্বাদ গ্রামের মতো।", "চট্টগ্রাম"],
+    ["ফারজানা ইসলাম", "ঘি-এর ঘ্রাণ অসাধারণ। দাম অনুযায়ী মান খুবই ভালো, আবার নেব।", "সিলেট"],
+  ],
+};
+</script>
+<script src="../assets/shop.js"></script>
+</body>
+</html>
