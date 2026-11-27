@@ -28,7 +28,8 @@ svg { display: block; width: 100%; height: 100%; }
 .hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); color: var(--dark); margin: 14px 0 6px; }
 .hero h1 em { font-style: normal; color: var(--main); }
 .hero p { color: var(--muted); font-size: 1.1rem; margin: 0 auto 10px; max-width: 34em; }
-.hero__img { width: 260px; height: 260px; margin: 6px auto; filter: drop-shadow(0 20px 30px rgba(120, 60, 0, .3)); }
+.hero__img { width: 300px; height: 300px; margin: 10px auto 14px; }
+.hero__img img, #whyImg img { width: 100%; height: 100%; object-fit: cover; border-radius: 22px; box-shadow: 0 24px 40px -18px rgba(120, 60, 0, .55); border: 5px solid #fff; }
 .price { display: inline-flex; align-items: center; gap: 12px; background: #fff; border: 2px dashed var(--main); border-radius: 14px; padding: 8px 20px; margin: 6px 0 18px; }
 .price del { color: var(--muted); font-size: 1.1rem; } .price b { font-size: 2rem; color: #e53935; }
 .timer { display: flex; justify-content: center; gap: 8px; margin: 16px 0 4px; }
@@ -79,7 +80,7 @@ footer a { color: #ffb347; }
 @media (max-width: 700px) {
   .problems, .benefits, .reviews, .order__box, .why { grid-template-columns: 1fr; }
   .why > div:first-child { width: 180px; margin: 0 auto; height: 180px; }
-  .hero__img { width: 210px; height: 210px; }
+  .hero__img { width: 240px; height: 240px; }
   .order__box { padding: 16px; }
   .sticky { display: block; }
 }
@@ -183,16 +184,15 @@ footer a { color: #ffb347; }
   <details><summary>শীতে মধু জমে যায় কেন?</summary><p>খাঁটি মধু ঠান্ডায় জমে যাওয়া স্বাভাবিক। গরম পানিতে জার রাখলে আবার তরল হয়ে যাবে।</p></details>
 </div></section>
 
-<footer>© খাঁটি ঘর · হেল্পলাইন: ০৯৬১০০০০০০০<br>ল্যান্ডিং পেজ ডেমো by <a href="../../">ShopShuru</a></footer>
+<footer>© খাঁটি ঘর · হেল্পলাইন: ০৯৬১০০০০০০০<br>ল্যান্ডিং পেজ ডেমো by <a href="../../">ShopShuru</a> · <a href="../credits.html">ছবি ক্রেডিট</a></footer>
 <div class="sticky"><a href="#order" class="btn">🛒 এখনই অর্ডার করুন — ৳৮৫০</a></div>
 
-<script src="../assets/art.js"></script>
 <script>
 (function () {
   const bn = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
   const tk = (n) => "৳" + bn(Number(n).toLocaleString("en-IN"));
-  document.getElementById("heroImg").innerHTML = art("jar", "#f4a61d", "#8a4b08", "মধু");
-  document.getElementById("whyImg").innerHTML = art("jar", "#6b3a12", "#2e1606", "চাকের মধু");
+  document.getElementById("heroImg").innerHTML = '<img src="../assets/img/organic/h1.jpg" alt="সুন্দরবনের খাঁটি মধু" width="800" height="800">';
+  document.getElementById("whyImg").innerHTML = '<img src="../assets/img/organic/h3.jpg" alt="চাকের মধু" width="800" height="800" loading="lazy">';
   // countdown to midnight
   const pad = (n) => bn(String(n).padStart(2, "0"));
   function tick() { const now = new Date(), end = new Date(now); end.setHours(24, 0, 0, 0); let s = Math.floor((end - now) / 1000);

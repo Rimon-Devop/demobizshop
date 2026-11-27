@@ -5,7 +5,9 @@
   const tk = (n) => "৳" + bn(Number(n).toLocaleString("en-IN"));
   const $ = (s, r = document) => r.querySelector(s);
   const byId = Object.fromEntries(S.products.map((p) => [p.id, p]));
-  const img = (o, label) => art(o.type, o.c1, o.c2, label === undefined ? o.label : label);
+  const photo = (p) => `<img class="ph" src="../assets/img/${S.key}/${p.id}.jpg" alt="${p.name}" loading="lazy" width="800" height="800">`;
+  const img = (o, label) => (S.photos && o.id ? photo(o) : art(o.type, o.c1, o.c2, label === undefined ? o.label : label));
+  const catImg = (c) => { const p = S.products.find((x) => x.cat === c.id); return S.photos && p ? photo(p) : art(c.type, c.c1, c.c2, ""); };
   const off = (p) => (p.old ? Math.round(((p.old - p.price) / p.old) * 100) : 0);
   const MAIN = "../../";
 
@@ -77,7 +79,7 @@
 
     <section class="block"><div class="wrap">
       <div class="block__head"><h2>ক্যাটাগরি</h2></div>
-      <div class="catgrid">${S.categories.map((c) => `<a href="#" data-cat="${c.id}" class="catcard"><span style="--bg:${c.bg || "var(--soft)"}">${art(c.type, c.c1, c.c2, "")}</span>${c.name}</a>`).join("")}</div>
+      <div class="catgrid">${S.categories.map((c) => `<a href="#" data-cat="${c.id}" class="catcard"><span style="--bg:${c.bg || "var(--soft)"}">${catImg(c)}</span>${c.name}</a>`).join("")}</div>
     </div></section>
 
     <div id="sections">${S.sections.map(section).join("")}</div>
@@ -102,7 +104,7 @@
     <div><h4>যোগাযোগ</h4><p>📞 ${bn(S.hotline)}<br>📍 ${S.address}<br>⏰ সকাল ৯টা – রাত ১০টা</p></div>
     <div><h4>তথ্য</h4><p>ডেলিভারি পলিসি<br>রিটার্ন পলিসি<br>প্রাইভেসি পলিসি</p></div>
     <div><h4>পেমেন্ট</h4><div class="pays"><span>ক্যাশ অন ডেলিভারি</span><span class="bkash">বিকাশ</span><span class="nagad">নগদ</span></div></div>
-  </div><div class="wrap foot__bottom">© ${S.name} · Demo by <a href="${MAIN}">ShopShuru</a></div></footer>
+  </div><div class="wrap foot__bottom">© ${S.name} · Demo by <a href="${MAIN}">ShopShuru</a> · <a href="../credits.html">ছবি ক্রেডিট</a></div></footer>
 
   <nav class="mnav">
     <a href="#" id="mHome"><span>🏠</span>হোম</a>

@@ -22,7 +22,8 @@ Plain HTML/CSS/JS — no build step. Fast on mobile data, free to host.
 | Single-product landing page (Facebook ads) | `demos/landing/` |
 
 The 4 shops share one engine (`demos/assets/shop.js` + `shop.css`); each shop's `index.html` only holds its colors and product list,
-so a new niche demo = copy a folder and edit the product data. Product pictures are drawn in SVG by `demos/assets/art.js` (no image files).
+so a new niche demo = copy a folder and edit the product data. Product photos live in `demos/assets/img/<shop>/<product-id>.jpg` (800×800). To change a product photo, replace that file with the same name.
+Photos are CC0 / CC BY from Openverse — see `demos/credits.html`. `art.js` draws fallback SVG pictures for shops without `photos: true`.
 Thumbnails on the main page are screenshots in `assets/demos/`.
 
 ## Edit contact details
