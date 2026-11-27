@@ -311,3 +311,8 @@ html[data-lang="bn"] .plan__price { font-family: var(--font); font-weight: 700; 
 .demo__tag--live { background: var(--green-100); color: var(--green-700); }
 .demo__open { display: inline-block; margin-top: 10px; font-weight: 700; color: var(--green-700); }
 .t-custom { background: repeating-linear-gradient(45deg, var(--tint), var(--tint) 12px, #fff 12px, #fff 24px); border-bottom: 1px dashed var(--line); }
+
+/* featured demo spans two columns on wide screens */
+@media (min-width: 1025px) { .demo--featured { grid-column: span 2; flex-direction: row; } .demo--featured .demo__thumb { flex: 1.3; aspect-ratio: auto; } .demo--featured .demo__body { flex: 1; display: flex; flex-direction: column; justify-content: center; } }
+.demo--featured { border: 2px solid var(--green-700); }
+.demo--featured .demo__thumb img { object-position: left top; }
