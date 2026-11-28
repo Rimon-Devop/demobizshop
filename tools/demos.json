@@ -1,0 +1,38 @@
+[
+ {
+  "slug": "t1-green-bazar",
+  "label": "ফ্রেশ গ্রিন বাজার",
+  "group": "food",
+  "brand": "সবুজ বাজার"
+ },
+ {
+  "slug": "t2-herbal",
+  "label": "হারবাল গ্রেডিয়েন্ট",
+  "group": "beauty",
+  "brand": "প্রাকৃতিক"
+ },
+ {
+  "slug": "t3-mart-pink",
+  "label": "মেগা মার্ট — পিংক",
+  "group": "beauty",
+  "brand": "GlowMart"
+ },
+ {
+  "slug": "t4-royal-boutique",
+  "label": "রয়্যাল বুটিক",
+  "group": "fashion",
+  "brand": "রাজকন্যা"
+ },
+ {
+  "slug": "t5-organic-editorial",
+  "label": "অর্গানিক এডিটোরিয়াল",
+  "group": "food",
+  "brand": "Ethica Organic"
+ },
+ {
+  "slug": "t7-atelier-blush",
+  "label": "অ্যাটেলিয়ার ব্লাশ",
+  "group": "fashion",
+  "brand": "Valéria"
+ }
+]

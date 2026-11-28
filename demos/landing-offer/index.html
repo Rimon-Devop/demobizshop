@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ভিটামিন সি সিরাম — অফার ল্যান্ডিং পেজ ডেমো</title>
+<meta name="description" content="ফেসবুক অ্যাডের জন্য এক পণ্যের ল্যান্ডিং পেজ — পেজেই অর্ডার ফর্ম।" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root { --p: #ef5b1c; --p2: #c2410c; --g1: #ff7a2f; --g2: #e11d48; --ink: #1f1a17; --mu: #6b6158; --line: #f1e4da; --bg: #fffaf6; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Hind Siliguri", system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; font-size: 17px; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; } img { display: block; max-width: 100%; height: auto; }
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+.demo-bar { background: #111; color: #fff; text-align: center; font-size: .82rem; padding: 6px 12px; } .demo-bar a { color: #ffc94d; font-weight: 700; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 99px; padding: 12px 26px; font: inherit; font-weight: 700; cursor: pointer; }
+.btn--p { background: linear-gradient(90deg, var(--g1), var(--g2)); color: #fff; box-shadow: 0 10px 24px -10px rgba(225, 29, 72, .7); }
+.btn--o { background: #fff; color: var(--p2); border: 2px solid var(--p); }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255, 255, 255, .95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+.logo { font-weight: 700; font-size: 1.3rem; color: var(--p2); } .logo b { color: var(--g2); }
+header .btn { padding: 8px 18px; font-size: .95rem; }
+.hero { padding: 40px 0 20px; text-align: center; }
+.hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.25; margin: 0 0 10px; }
+.hero h1 mark { background: linear-gradient(90deg, var(--g1), var(--g2)); color: #fff; padding: 0 10px; border-radius: 10px; }
+.hero p { color: var(--mu); max-width: 46ch; margin: 0 auto 20px; }
+.hero .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.prod { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: center; background: #fff; border-radius: 24px; padding: 22px; margin: 30px 0; box-shadow: 0 20px 50px -30px rgba(0, 0, 0, .35); position: relative; }
+.prod img { border-radius: 18px; aspect-ratio: 1; object-fit: cover; }
+.hot { position: absolute; top: 18px; left: 18px; background: var(--g2); color: #fff; font-weight: 700; border-radius: 99px; padding: 4px 14px; font-size: .85rem; z-index: 1; }
+.prod h2 { margin: 0 0 6px; font-size: 1.6rem; } .price { font-size: 2rem; font-weight: 700; color: var(--g2); } .price del { font-size: 1.1rem; color: var(--mu); font-weight: 400; margin-left: 8px; }
+.prod ul { padding-left: 0; list-style: none; margin: 12px 0 18px; } .prod li { padding: 4px 0; } .prod li::before { content: "✓ "; color: var(--p); font-weight: 700; }
+h3.t { text-align: center; font-size: 1.7rem; margin: 40px 0 18px; }
+.why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.why div { position: relative; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 26px 18px 20px; text-align: center; }
+.why div::before { content: attr(data-r); position: absolute; top: 14px; right: -34px; transform: rotate(45deg); background: var(--p); color: #fff; font-size: .72rem; font-weight: 700; padding: 2px 40px; }
+.why b { display: block; font-size: 1.15rem; margin: 6px 0; } .why span { font-size: 2rem; } .why small { color: var(--mu); }
+.rev { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.rev figure { margin: 0; background: #fff; border-radius: 18px; padding: 18px; border: 1px solid var(--line); } .rev figcaption { color: var(--mu); font-size: .9rem; margin-top: 6px; } .stars { color: #f5a623; }
+.order { margin: 40px 0; border-radius: 24px; overflow: hidden; background: #fff; box-shadow: 0 24px 60px -30px rgba(0, 0, 0, .4); }
+.order__h { background: linear-gradient(90deg, var(--g1), var(--g2)); color: #fff; text-align: center; padding: 18px; }
+.order__h h3 { margin: 0; font-size: 1.5rem; } .order__h p { margin: 2px 0 0; opacity: .9; }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; padding: 24px; }
+label { display: block; font-weight: 600; margin-bottom: 12px; font-size: .95rem; }
+input:not([type=radio]), textarea { display: block; width: 100%; margin-top: 4px; font: inherit; border: 1.5px solid var(--line); border-radius: 12px; padding: 11px 13px; outline: none; background: #fff; color: var(--ink); }
+input:focus, textarea:focus { border-color: var(--p); }
+.opt { display: flex; align-items: center; gap: 10px; border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; font-weight: 500; cursor: pointer; }
+.opt:has(input:checked) { border-color: var(--p); background: #fff4ec; } .opt input { accent-color: var(--p); } .opt b { margin-left: auto; }
+.sum { background: var(--bg); border-radius: 14px; padding: 12px 14px; margin: 10px 0 14px; } .sum div { display: flex; justify-content: space-between; padding: 3px 0; } .sum .tt { border-top: 2px dashed var(--line); margin-top: 6px; padding-top: 8px; font-weight: 700; font-size: 1.15rem; color: var(--g2); }
+.qty { display: inline-flex; border: 1.5px solid var(--line); border-radius: 12px; overflow: hidden; } .qty button { border: 0; background: #fff4ec; width: 40px; height: 40px; font-weight: 700; font-size: 1.1rem; cursor: pointer; } .qty span { min-width: 40px; display: grid; place-items: center; font-weight: 700; }
+.err { color: #d32f2f; font-weight: 600; font-size: .9rem; }
+.done { text-align: center; padding: 30px 20px; grid-column: 1 / -1; } .done i { width: 70px; height: 70px; border-radius: 50%; background: #16a34a; color: #fff; font-size: 2rem; font-style: normal; display: grid; place-items: center; margin: 0 auto 10px; }
+.note { background: #fff8e6; border: 1px dashed #f59e0b; border-radius: 12px; padding: 12px; margin: 14px auto; max-width: 480px; font-size: .95rem; }
+footer { text-align: center; color: var(--mu); padding: 20px 16px 30px; font-size: .9rem; } footer a { color: var(--p2); text-decoration: underline; }
+@media (max-width: 760px) { .prod, form, .why, .rev { grid-template-columns: 1fr; } .prod { padding: 14px; } }
+</style>
+</head>
+<body>
+<div class="demo-bar">🎯 এটি একটি <b>অফার ল্যান্ডিং পেজ ডেমো</b> — ফেসবুক অ্যাডের জন্য এমন পেজ চাই? <a href="../../#contact">অর্ডার করুন →</a></div>
+<header><div class="wrap"><span class="logo">Glow<b>Lab</b></span><a href="#order" class="btn btn--p">অর্ডার করুন</a></div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>দাগহীন উজ্জ্বল ত্বক মাত্র <mark>২৮ দিনে</mark></h1>
+    <p>১০% ভিটামিন সি সিরাম — মেছতা, রোদে পোড়া দাগ আর মলিন ভাব কমাতে প্রতিদিনের যত্ন।</p>
+    <div class="cta"><a href="#order" class="btn btn--p">🛒 এখনই অর্ডার করুন</a><a href="tel:09610000000" class="btn btn--o">📞 কল করুন</a></div>
+  </section>
+  <section class="prod">
+    <span class="hot">🔥 HOT DEAL</span>
+    <img src="../assets/img/beauty/s1.jpg" alt="ভিটামিন সি সিরাম" width="800" height="800">
+    <div><h2>ভিটামিন সি ব্রাইটেনিং সিরাম (৩০ মিলি)</h2><div class="price">৳৮৯০<del>৳১,১৯০</del></div>
+      <ul><li>১০% ভিটামিন সি + হায়ালুরোনিক অ্যাসিড</li><li>সব ধরনের ত্বকে ব্যবহারযোগ্য</li><li>পণ্য হাতে পেয়ে টাকা পরিশোধ</li><li>ঢাকায় ২৪ ঘণ্টায় ডেলিভারি</li></ul>
+      <a href="#order" class="btn btn--p">অফার দামে অর্ডার করুন</a></div>
+  </section>
+  <h3 class="t">কেন আমাদের সিরাম?</h3>
+  <section class="why"><div data-r="১০০% অরিজিনাল"><span>✅</span><b>অথেনটিক পণ্য</b><small>ব্যাচ নম্বর ও এক্সপায়ারি সহ</small></div><div data-r="ফাস্ট"><span>🚚</span><b>দ্রুত ডেলিভারি</b><small>ঢাকায় ২৪ ঘণ্টা, বাইরে ২-৩ দিন</small></div><div data-r="নিরাপদ"><span>💵</span><b>ক্যাশ অন ডেলিভারি</b><small>দেখে নিয়ে টাকা দিন</small></div></section>
+  <h3 class="t">কাস্টমারদের মতামত <small style="font-size:.6em;color:var(--mu)">(ডেমো)</small></h3>
+  <section class="rev"><figure><span class="stars">★★★★★</span><blockquote style="margin:6px 0 0">“৩ সপ্তাহে দাগ অনেক হালকা হয়েছে।”</blockquote><figcaption>— নুসরাত, উত্তরা</figcaption></figure><figure><span class="stars">★★★★★</span><blockquote style="margin:6px 0 0">“প্যাকেজিং খুব ভালো, ডেলিভারিও দ্রুত।”</blockquote><figcaption>— তানজিলা, রাজশাহী</figcaption></figure><figure><span class="stars">★★★★★</span><blockquote style="margin:6px 0 0">“ত্বক আগের চেয়ে উজ্জ্বল লাগে।”</blockquote><figcaption>— সাদিয়া, খুলনা</figcaption></figure></section>
+  <section class="order" id="order">
+    <div class="order__h"><h3>অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h3><p>কোনো অগ্রিম টাকা লাগবে না</p></div>
+    <form id="f" novalidate>
+      <div>
+        <label>আপনার নাম *<input name="n" required placeholder="সম্পূর্ণ নাম"></label>
+        <label>মোবাইল নম্বর *<input name="ph" required inputmode="numeric" maxlength="11" placeholder="01XXXXXXXXX"></label>
+        <label>সম্পূর্ণ ঠিকানা *<textarea name="a" rows="3" required placeholder="বাসা, রোড, থানা, জেলা"></textarea></label>
+      </div>
+      <div>
+        <label>পরিমাণ</label><div class="qty"><button type="button" data-d="-1" aria-label="কমান">−</button><span id="q">১</span><button type="button" data-d="1" aria-label="বাড়ান">+</button></div>
+        <p style="margin:12px 0 6px;font-weight:600">ডেলিভারি এলাকা</p>
+        <label class="opt"><input type="radio" name="z" value="70" checked> ঢাকার ভিতরে <b>৳৭০</b></label>
+        <label class="opt"><input type="radio" name="z" value="130"> ঢাকার বাইরে <b>৳১৩০</b></label>
+        <div class="sum"><div><span>পণ্যের দাম</span><b id="sp"></b></div><div><span>ডেলিভারি</span><b id="ss"></b></div><div class="tt"><span>সর্বমোট</span><span id="st"></span></div></div>
+        <p class="err" id="e" hidden></p>
+        <button class="btn btn--p" style="width:100%" id="b">অর্ডার কনফার্ম করুন</button>
+        <p style="text-align:center;color:var(--mu);font-size:.85rem;margin:8px 0 0">🔒 ডেমো — কোনো আসল অর্ডার হবে না</p>
+      </div>
+    </form>
+  </section>
+</main>
+<footer>© GlowLab · ল্যান্ডিং পেজ ডেমো by <a href="../../">ShopShuru</a> · <a href="../credits.html">ছবি ক্রেডিট</a></footer>
+<script>
+(function () {
+  const bn = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]), tk = (n) => "৳" + bn(n.toLocaleString("en-IN"));
+  const f = document.getElementById("f"), P = 890; let q = 1;
+  const u = () => { const z = +f.querySelector("[name=z]:checked").value; document.getElementById("q").textContent = bn(q); document.getElementById("sp").textContent = tk(P * q); document.getElementById("ss").textContent = tk(z); document.getElementById("st").textContent = tk(P * q + z); document.getElementById("b").textContent = "অর্ডার কনফার্ম করুন — " + tk(P * q + z); };
+  f.addEventListener("click", (e) => { const b = e.target.closest("[data-d]"); if (b) { q = Math.max(1, Math.min(10, q + +b.dataset.d)); u(); } });
+  f.addEventListener("change", u); u();
+  f.ph.addEventListener("input", () => (f.ph.value = f.ph.value.replace(/\D/g, "")));
+  f.addEventListener("submit", (e) => { e.preventDefault(); const er = []; if (!f.n.value.trim()) er.push("নাম"); if (!/^01[3-9]\d{8}$/.test(f.ph.value)) er.push("সঠিক মোবাইল নম্বর"); if (!f.a.value.trim()) er.push("ঠিকানা");
+    const el = document.getElementById("e"); if (er.length) { el.hidden = false; el.textContent = "দয়া করে দিন: " + er.join(", "); return; }
+    f.innerHTML = `<div class="done"><i>✓</i><h2>ধন্যবাদ! অর্ডারটি গ্রহণ করা হয়েছে</h2><p>আমাদের প্রতিনিধি শীঘ্রই কল করে কনফার্ম করবেন।</p><div class="note"><b>এটি ডেমো ছিল।</b> আসল পেজে কাস্টমার SMS পেত, অ্যাডমিনে অর্ডার আসত আর ফেসবুক পিক্সেলে Purchase ইভেন্ট যেত।</div><a class="btn btn--p" href="../../#contact">এমন ল্যান্ডিং পেজ চাই →</a></div>`; });
+})();
+</script>
+</body>
+</html>
