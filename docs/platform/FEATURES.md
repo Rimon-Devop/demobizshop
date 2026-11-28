@@ -116,15 +116,40 @@ POS for physical shops · Hisab (accounting/due book) · mobile app (same API) �
 
 ---
 
-## getCommerce: what we know & what to check
+## 11. Added after the getCommerce teardown (see `../competitor-getcommerce.md`)
+| Feature | Pri |
+|---|---|
+| **Pop-up checkout** (checkout in a modal from product / landing page) | P1 |
+| Store pickup delivery method (hides address) | P2 |
+| **Duplicate-order block** (same phone + items within N minutes) | P1 |
+| **COD settlement reconciliation** (match courier payouts to orders) | P2 |
+| Couriers Paperfly and Carrybee (after Steadfast, Pathao, RedX) | P2 |
+| Payment gateways DGpay and EPS (on demand) | P3 |
+| Reward points | P2 |
+| Merchant-defined attributes; variant image swap; impossible combinations disabled (not "Stock Out") | P1 |
+| Product page tabs: specification, video, warranty policy; share buttons | P2 |
+| Reviews: % recommended, 5→1 breakdown | P2 |
+| Customer accounts: Google login, payment history, **support tickets** | P2 |
+| Multi-warehouse inventory, purchase orders, suppliers | P2 |
+| **Hisab** accounting (income/expense, COD receivable, due book, daily P&L) | P2 |
+| Outlet POS | P3 |
+| Production management (raw → finished goods) | P3 |
+| HRM: employees, attendance, payroll | P3 |
+| CRM segments, SMS/WhatsApp campaigns, **abandoned-cart offers**, promotion engine | P2 |
+| **Campaign ad profitability** (Meta Ads spend → orders → true profit) | P2 |
+| **Unified inbox** (Messenger, Instagram, WhatsApp, live chat) with order creation in chat — competitor "coming soon" | P2 (headline) |
+| Call-centre add-on: AI auto-call confirmation, IVR | P3 |
+| Shopify & WooCommerce two-way sync (also our migration tool) | P3 |
+| Merchant Android app; white-label customer app (Enterprise) | P3 |
+| Plans from one config; usage metering; per-order overage; ৳/extra staff; trial; money-back; plan finder; bill estimator | P1 (billing in Phase 4) |
+| Marketing site: templates with **live demos + "Start with this template"**, free tools, status page, case studies | P1 (Phase 4) |
+| Meta tech-provider requirements: app review, data-deletion callback + status URL | P2 (before inbox) |
+| Isolated database per shop as a paid option | P3 |
 
-**Known (from ghorerbazar.com):** `<meta name="generator" content="getCommerce 3.0.0">`; Laravel + Blade + jQuery + Bootstrap; Wolmart-style theme; admin-selectable section styles (header style-7, hero style-7, card style-6, footer style-3); colours from CSS variables; jStorage client cart synced to server; route list in §4 of the teardown.
+The phased order of all features is in `ROADMAP.md` §5.
 
-**Not found yet:** the vendor, its website, pricing, admin panel. A web search for "getCommerce" found nothing relevant.
+## getCommerce: findings
 
-**Research checklist (run in the local Chrome session):**
-1. On ghorerbazar.com, look for "Developed by / Powered by" in the footer, `/humans.txt`, `/robots.txt`, `/sitemap.xml`, and HTML comments.
-2. Search Facebook and Google for "getCommerce" + Bangladesh, "getcommerce.com.bd", "getcommerce.xyz", and the phrase in the generator tag.
-3. Find 3–5 other stores with the same generator tag (search the exact `getCommerce 3.0.0` string, or check stores that share the same theme/routes).
-4. If a vendor site exists: pricing, plans, setup fee, feature list, admin demo, themes, payment/courier integrations, support terms.
-5. Record everything in `docs/competitor-getcommerce.md` with the same format as the ghorerbazar teardown.
+Researched on 28 Nov 2026 — full report in `../competitor-getcommerce.md`. Vendor: GetUp Limited (Softifybd group), also branded GetStore.
+Laravel + MySQL, database per store, ৳2,999–15,000/month with per-order overage, sister products CourierVerify (fraud) and Obiram (call centre).
+Still unknown: the inside of their merchant admin (needs a trial account).

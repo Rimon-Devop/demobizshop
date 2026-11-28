@@ -1,5 +1,7 @@
 # Build Plan — Laravel Edition
 
+> **Phases and priorities are defined in `ROADMAP.md`** (updated after the getCommerce teardown). The MVP phases below cover roadmap Phases 0–4; later phases (marketing tools, unified inbox, Hisab/POS, channels) follow ROADMAP §5.
+
 Multi-shop e-commerce platform for Bangladeshi sellers, built on Laravel. Feature list: `FEATURES.md`. Competitor teardown: `docs/competitor-ghorerbazar.md`.
 
 Why Laravel: the same stack as getCommerce, the most common PHP skill in Bangladesh (easy to hire), runs on cheap cPanel/VPS hosting, mature packages for admin panels, queues and payments.

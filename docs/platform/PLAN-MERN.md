@@ -1,5 +1,7 @@
 # Build Plan — MERN Edition
 
+> **Phases and priorities are defined in `ROADMAP.md`** (updated after the getCommerce teardown). The MVP phases below cover roadmap Phases 0–4; later phases (marketing tools, unified inbox, Hisab/POS, channels) follow ROADMAP §5.
+
 Same multi-shop e-commerce platform for Bangladeshi sellers, built on MongoDB, Express, React and Node. Feature list: `FEATURES.md` (identical to the Laravel edition). Competitor teardown: `docs/competitor-ghorerbazar.md`.
 
 Why MERN: one language (TypeScript) for API, admin, storefront and a future mobile app (React Native); flexible documents suit product variants, theme settings and page sections; strong for real-time admin features (live order feed).
