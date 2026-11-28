@@ -18,6 +18,42 @@
   "brand": "GlowMart"
  },
  {
+  "slug": "t3-mart-orange",
+  "label": "গ্যাজেট মার্ট — অরেঞ্জ",
+  "group": "gadget",
+  "brand": "TechTuch"
+ },
+ {
+  "slug": "t3-mart-blue",
+  "label": "ইজি মার্ট — ব্লু",
+  "group": "gadget",
+  "brand": "EasyMart"
+ },
+ {
+  "slug": "t3b-library",
+  "label": "লাইব্রেরি গ্রিন ও গোল্ড",
+  "group": "books",
+  "brand": "লেখনী"
+ },
+ {
+  "slug": "t6-menswear",
+  "label": "ক্রিম এডিটোরিয়াল মেনসওয়্যার",
+  "group": "fashion",
+  "brand": "NOIR 7"
+ },
+ {
+  "slug": "t7-atelier-mocha",
+  "label": "অ্যাটেলিয়ার মোকা",
+  "group": "fashion",
+  "brand": "ZARIN"
+ },
+ {
+  "slug": "t8-black-gold",
+  "label": "ব্ল্যাক ও গোল্ড অ্যারাবিয়ান",
+  "group": "luxury",
+  "brand": "AL-NOOR"
+ },
+ {
   "slug": "t4-royal-boutique",
   "label": "রয়্যাল বুটিক",
   "group": "fashion",

@@ -288,44 +288,129 @@
       <h2><span lang="bn">আপনার পণ্যের মতো ডিজাইন বেছে নিন</span><span lang="en">Pick a design made for your product</span></h2>
       <p class="section__sub"><span lang="bn">প্রতিটি ডেমো পুরোপুরি কাজ করে — পণ্য দেখুন, কার্টে যোগ করুন, অর্ডার করে দেখুন।</span><span lang="en">Every demo fully works — browse, add to cart, place a test order.</span></p>
     </div>
-    <div class="demos">
-      <a class="demo demo--featured" href="demos/bazar/" target="_blank" rel="noopener">
-        <div class="demo__thumb"><img src="assets/demos/bazar.jpg" alt="Large grocery store demo" loading="lazy" width="640" height="400"></div>
-        <div class="demo__body"><h3><span lang="bn">বড় অনলাইন সুপারশপ (সম্পূর্ণ ফিচার)</span><span lang="en">Full-featured online supershop</span></h3><p><span lang="bn">ক্যাটাগরি ফিল্টার, লাইভ সার্চ, ফ্ল্যাশ সেল, জেলা অনুযায়ী ডেলিভারি চার্জ, বিকাশ ও অগ্রিম পেমেন্ট, অর্ডার ট্র্যাকিং</span><span lang="en">Category filters, live search, flash sale, district delivery charges, bKash &amp; part-payment, order tracking</span></p>
+    <div class="demo-filter" role="tablist" aria-label="ডেমো ফিল্টার"><button class="on" data-filter="all"><span lang="bn">সব ডিজাইন</span><span lang="en">All</span></button><button class="" data-filter="food"><span lang="bn">খাবার ও গ্রোসারি</span><span lang="en">Food</span></button><button class="" data-filter="fashion"><span lang="bn">ফ্যাশন</span><span lang="en">Fashion</span></button><button class="" data-filter="beauty"><span lang="bn">বিউটি</span><span lang="en">Beauty</span></button><button class="" data-filter="gadget"><span lang="bn">গ্যাজেট</span><span lang="en">Gadgets</span></button><button class="" data-filter="books"><span lang="bn">বই ও ইসলামিক</span><span lang="en">Books</span></button><button class="" data-filter="luxury"><span lang="bn">জুয়েলারি ও লাক্সারি</span><span lang="en">Luxury</span></button><button class="" data-filter="landing"><span lang="bn">ল্যান্ডিং পেজ</span><span lang="en">Landing pages</span></button></div>
+    <div class="demos" id="demoGrid">
+      <a class="demo demo--featured" href="demos/bazar/" target="_blank" rel="noopener" data-group="food">
+        <div class="demo__thumb"><img src="assets/demos/bazar.jpg" alt="Full-featured online supershop demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">বড় অনলাইন সুপারশপ (সম্পূর্ণ ফিচার)</span><span lang="en">Full-featured online supershop</span></h3><p><span lang="bn">ক্যাটাগরি ফিল্টার, লাইভ সার্চ, ফ্ল্যাশ সেল, জেলা অনুযায়ী ডেলিভারি চার্জ, অগ্রিম পেমেন্ট, অর্ডার ট্র্যাকিং</span><span lang="en">Filters, live search, flash sale, district delivery charges, part-payment, tracking</span></p>
           <span class="demo__tag demo__tag--live">● <span lang="bn">নতুন</span><span lang="en">New</span></span>
           <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
       </a>
-      <a class="demo" href="demos/organic/" target="_blank" rel="noopener">
-        <div class="demo__thumb"><img src="assets/demos/organic.jpg" alt="Organic food demo" loading="lazy" width="640" height="400"></div>
-        <div class="demo__body"><h3><span lang="bn">অর্গানিক ফুড</span><span lang="en">Organic food</span></h3><p><span lang="bn">গুড়, মধু, ঘি, মসলা, তেল</span><span lang="en">Gur, honey, ghee, spices, oil</span></p>
+      <a class="demo" href="demos/t1-green-bazar/" target="_blank" rel="noopener" data-group="food">
+        <div class="demo__thumb"><img src="assets/demos/t1-green-bazar.jpg" alt="Fresh green bazaar demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">ফ্রেশ গ্রিন বাজার</span><span lang="en">Fresh green bazaar</span></h3><p><span lang="bn">সবুজ ক্যাটাগরি বার, মোস্ট সেলিং লিস্ট, ২×২ অর্ডার বাটন</span><span lang="en">Green category bar, most-selling list, 2×2 buy buttons</span></p>
           <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
           <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
       </a>
-      <a class="demo" href="demos/beauty/" target="_blank" rel="noopener">
-        <div class="demo__thumb"><img src="assets/demos/beauty.jpg" alt="Beauty &amp; cosmetics demo" loading="lazy" width="640" height="400"></div>
-        <div class="demo__body"><h3><span lang="bn">বিউটি ও কসমেটিক্স</span><span lang="en">Beauty &amp; cosmetics</span></h3><p><span lang="bn">স্কিনকেয়ার, মেকআপ, হেয়ারকেয়ার</span><span lang="en">Skincare, makeup, haircare</span></p>
+      <a class="demo" href="demos/t5-organic-editorial/" target="_blank" rel="noopener" data-group="food">
+        <div class="demo__thumb"><img src="assets/demos/t5-organic-editorial.jpg" alt="Organic editorial demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">অর্গানিক এডিটোরিয়াল</span><span lang="en">Organic editorial</span></h3><p><span lang="bn">সেরিফ হেডিং, গোলাকার কার্ড, "কেন আমরা" সেকশন</span><span lang="en">Serif headings, rounded cards, why-us band</span></p>
           <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
           <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
       </a>
-      <a class="demo" href="demos/fashion/" target="_blank" rel="noopener">
-        <div class="demo__thumb"><img src="assets/demos/fashion.jpg" alt="Fashion &amp; saree demo" loading="lazy" width="640" height="400"></div>
-        <div class="demo__body"><h3><span lang="bn">ফ্যাশন ও শাড়ি</span><span lang="en">Fashion &amp; saree</span></h3><p><span lang="bn">শাড়ি, থ্রি-পিস, কুর্তি, পাঞ্জাবি</span><span lang="en">Saree, three-piece, kurti, panjabi</span></p>
+      <a class="demo" href="demos/organic/" target="_blank" rel="noopener" data-group="food">
+        <div class="demo__thumb"><img src="assets/demos/organic.jpg" alt="Organic food — classic demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">অর্গানিক ফুড — ক্লাসিক</span><span lang="en">Organic food — classic</span></h3><p><span lang="bn">গুড়, মধু, ঘি, মসলা, তেল</span><span lang="en">Gur, honey, ghee, spices, oil</span></p>
           <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
           <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
       </a>
-      <a class="demo" href="demos/jewelry/" target="_blank" rel="noopener">
-        <div class="demo__thumb"><img src="assets/demos/jewelry.jpg" alt="Jewelry demo" loading="lazy" width="640" height="400"></div>
-        <div class="demo__body"><h3><span lang="bn">জুয়েলারি</span><span lang="en">Jewelry</span></h3><p><span lang="bn">আংটি, নেকলেস, কানের দুল, চুড়ি</span><span lang="en">Rings, necklaces, earrings, bangles</span></p>
+      <a class="demo" href="demos/t4-royal-boutique/" target="_blank" rel="noopener" data-group="fashion">
+        <div class="demo__thumb"><img src="assets/demos/t4-royal-boutique.jpg" alt="Royal boutique demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">রয়্যাল বুটিক</span><span lang="en">Royal boutique</span></h3><p><span lang="bn">মেরুন থিম, পোর্ট্রেট কার্ড, শাড়ি ও কুর্তি</span><span lang="en">Maroon theme, portrait cards, saree &amp; kurti</span></p>
           <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
           <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
       </a>
-      <a class="demo" href="demos/landing/" target="_blank" rel="noopener">
-        <div class="demo__thumb"><img src="assets/demos/landing.jpg" alt="Single-product landing page demo" loading="lazy" width="640" height="400"></div>
-        <div class="demo__body"><h3><span lang="bn">সিঙ্গেল প্রোডাক্ট ল্যান্ডিং পেজ</span><span lang="en">Single-product landing page</span></h3><p><span lang="bn">ফেসবুক অ্যাড থেকে সরাসরি অর্ডার</span><span lang="en">Straight from Facebook ad to order</span></p>
+      <a class="demo" href="demos/t7-atelier-blush/" target="_blank" rel="noopener" data-group="fashion">
+        <div class="demo__thumb"><img src="assets/demos/t7-atelier-blush.jpg" alt="Atelier blush demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">অ্যাটেলিয়ার ব্লাশ</span><span lang="en">Atelier blush</span></h3><p><span lang="bn">প্রিমিয়াম নারী ফ্যাশন, বিউটি ও জুয়েলারি</span><span lang="en">Premium womenswear, beauty &amp; jewellery</span></p>
           <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
           <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
       </a>
-      <a class="demo demo--custom" href="#contact" data-demo="Custom design">
+      <a class="demo" href="demos/t7-atelier-mocha/" target="_blank" rel="noopener" data-group="fashion">
+        <div class="demo__thumb"><img src="assets/demos/t7-atelier-mocha.jpg" alt="Atelier mocha demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">অ্যাটেলিয়ার মোকা</span><span lang="en">Atelier mocha</span></h3><p><span lang="bn">প্রিমিয়াম মেনসওয়্যার, এডিট ব্যানার, নিউজলেটার</span><span lang="en">Premium menswear, edit banners, newsletter</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t6-menswear/" target="_blank" rel="noopener" data-group="fashion">
+        <div class="demo__thumb"><img src="assets/demos/t6-menswear.jpg" alt="Cream editorial menswear demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">ক্রিম এডিটোরিয়াল মেনসওয়্যার</span><span lang="en">Cream editorial menswear</span></h3><p><span lang="bn">ম্যাগাজিন স্টাইল হিরো, মাঝখানে লোগো</span><span lang="en">Magazine-style hero, centred logo</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/fashion/" target="_blank" rel="noopener" data-group="fashion">
+        <div class="demo__thumb"><img src="assets/demos/fashion.jpg" alt="Fashion &amp; saree — classic demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">ফ্যাশন ও শাড়ি — ক্লাসিক</span><span lang="en">Fashion &amp; saree — classic</span></h3><p><span lang="bn">শাড়ি, থ্রি-পিস, কুর্তি, পাঞ্জাবি</span><span lang="en">Saree, three-piece, kurti, panjabi</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t3-mart-pink/" target="_blank" rel="noopener" data-group="beauty">
+        <div class="demo__thumb"><img src="assets/demos/t3-mart-pink.jpg" alt="Mega mart — pink demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">মেগা মার্ট — পিংক</span><span lang="en">Mega mart — pink</span></h3><p><span lang="bn">কাউন্টডাউন বার, ফ্ল্যাশ সেল, ৬ কলাম গ্রিড</span><span lang="en">Countdown bar, flash sale, 6-column grid</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t2-herbal/" target="_blank" rel="noopener" data-group="beauty">
+        <div class="demo__thumb"><img src="assets/demos/t2-herbal.jpg" alt="Herbal gradient demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">হারবাল গ্রেডিয়েন্ট</span><span lang="en">Herbal gradient</span></h3><p><span lang="bn">গ্রেডিয়েন্ট সেকশন বার, গোল ক্যাটাগরি কার্ড</span><span lang="en">Gradient section bars, round category cards</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/beauty/" target="_blank" rel="noopener" data-group="beauty">
+        <div class="demo__thumb"><img src="assets/demos/beauty.jpg" alt="Beauty — classic demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">বিউটি — ক্লাসিক</span><span lang="en">Beauty — classic</span></h3><p><span lang="bn">স্কিনকেয়ার, মেকআপ, হেয়ারকেয়ার</span><span lang="en">Skincare, makeup, haircare</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t3-mart-orange/" target="_blank" rel="noopener" data-group="gadget">
+        <div class="demo__thumb"><img src="assets/demos/t3-mart-orange.jpg" alt="Gadget mart — orange demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">গ্যাজেট মার্ট — অরেঞ্জ</span><span lang="en">Gadget mart — orange</span></h3><p><span lang="bn">Browse Category বার, ফ্ল্যাশ সেল, স্টেপ চেকআউট</span><span lang="en">Browse-category bar, flash sale, stepper checkout</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t3-mart-blue/" target="_blank" rel="noopener" data-group="gadget">
+        <div class="demo__thumb"><img src="assets/demos/t3-mart-blue.jpg" alt="Easy mart — blue demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">ইজি মার্ট — ব্লু</span><span lang="en">Easy mart — blue</span></h3><p><span lang="bn">মার্কেটপ্লেস স্টাইল, ঘন প্রোডাক্ট গ্রিড</span><span lang="en">Marketplace style, dense product grid</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t3b-library/" target="_blank" rel="noopener" data-group="books">
+        <div class="demo__thumb"><img src="assets/demos/t3b-library.jpg" alt="Library green &amp; gold demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">লাইব্রেরি গ্রিন ও গোল্ড</span><span lang="en">Library green &amp; gold</span></h3><p><span lang="bn">বই, ইসলামিক পণ্য ও স্টেশনারি; বাল্ক অর্ডার</span><span lang="en">Books, Islamic items &amp; stationery; bulk orders</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/t8-black-gold/" target="_blank" rel="noopener" data-group="luxury">
+        <div class="demo__thumb"><img src="assets/demos/t8-black-gold.jpg" alt="Black &amp; gold Arabian demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">ব্ল্যাক ও গোল্ড অ্যারাবিয়ান</span><span lang="en">Black &amp; gold Arabian</span></h3><p><span lang="bn">আতর, মডেস্ট ফ্যাশন, উপহার; মারকি রিবন, FAQ</span><span lang="en">Attar, modest wear, gifts; marquee, FAQ</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/jewelry/" target="_blank" rel="noopener" data-group="luxury">
+        <div class="demo__thumb"><img src="assets/demos/jewelry.jpg" alt="Jewellery — classic demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">জুয়েলারি — ক্লাসিক</span><span lang="en">Jewellery — classic</span></h3><p><span lang="bn">আংটি, নেকলেস, কানের দুল, চুড়ি</span><span lang="en">Rings, necklaces, earrings, bangles</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/landing/" target="_blank" rel="noopener" data-group="landing">
+        <div class="demo__thumb"><img src="assets/demos/landing.jpg" alt="Single-product landing demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">সিঙ্গেল প্রোডাক্ট ল্যান্ডিং</span><span lang="en">Single-product landing</span></h3><p><span lang="bn">লম্বা সেলস পেজ, কাউন্টডাউন, প্যাকেজ বাছাই</span><span lang="en">Long sales page, countdown, package picker</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/landing-offer/" target="_blank" rel="noopener" data-group="landing">
+        <div class="demo__thumb"><img src="assets/demos/landing-offer.jpg" alt="Offer landing (gradient form) demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">অফার ল্যান্ডিং (গ্রেডিয়েন্ট ফর্ম)</span><span lang="en">Offer landing (gradient form)</span></h3><p><span lang="bn">ফেসবুক অ্যাড থেকে সরাসরি অর্ডার, পেজেই ফর্ম</span><span lang="en">Facebook ad → order form on the page</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo" href="demos/maintenance/" target="_blank" rel="noopener" data-group="landing">
+        <div class="demo__thumb"><img src="assets/demos/maintenance.jpg" alt="Maintenance page demo" loading="lazy" width="640" height="400"></div>
+        <div class="demo__body"><h3><span lang="bn">মেইনটেন্যান্স পেজ</span><span lang="en">Maintenance page</span></h3><p><span lang="bn">সাইট আপডেটের সময়ও WhatsApp-এ অর্ডার</span><span lang="en">Keeps taking WhatsApp orders during updates</span></p>
+          <span class="demo__tag demo__tag--live">● <span lang="bn">লাইভ</span><span lang="en">Live</span></span>
+          <span class="demo__open"><span lang="bn">ডেমো দেখুন ↗</span><span lang="en">Open demo ↗</span></span></div>
+      </a>
+      <a class="demo demo--custom" href="#contact" data-demo="Custom design" data-group="all">
         <div class="demo__thumb t-custom"><span>✏️</span></div>
         <div class="demo__body"><h3><span lang="bn">আপনার পছন্দের ডিজাইন</span><span lang="en">Your own design</span></h3><p><span lang="bn">পছন্দের কোনো সাইটের লিংক দিন — সেভাবেই বানিয়ে দেব</span><span lang="en">Send a site you like — we'll build it your way</span></p>
           <span class="demo__open"><span lang="bn">যোগাযোগ করুন →</span><span lang="en">Contact us →</span></span></div>

@@ -78,3 +78,14 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 })();
+
+// ---------- demo category filter ----------
+(function () {
+  const bar = document.querySelector(".demo-filter"); if (!bar) return;
+  bar.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-filter]"); if (!b) return;
+    const g = b.dataset.filter;
+    bar.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
+    document.querySelectorAll("#demoGrid .demo").forEach((d) => d.classList.toggle("is-hidden", g !== "all" && d.dataset.group !== g && d.dataset.group !== "all"));
+  });
+})();
